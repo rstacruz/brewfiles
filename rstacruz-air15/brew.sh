@@ -159,7 +159,6 @@ brew install ssh-copy-id
 brew install terminal-notifier
 brew install texi2html
 brew install the_silver_searcher
-brew install thefuck
 brew install tig
 brew install tmux
 brew install tree
