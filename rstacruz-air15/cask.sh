@@ -31,6 +31,7 @@ brew cask install flash-player
 brew cask install fluid
 brew cask install flux
 brew cask install font-anonymous-pro-for-powerline
+brew cask install font-arimo
 brew cask install font-bebas-neue
 brew cask install font-bitter
 brew cask install font-clear-sans
