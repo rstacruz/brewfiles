@@ -86,9 +86,7 @@ brew cask install nosleep
 brew cask install numi
 brew cask install rightfont
 brew cask install rowanj-gitx
-brew cask install shimeike-formulatepro
 brew cask install sketch-toolbox
-brew cask install skim
 brew cask install skitch
 brew cask install skype
 brew cask install slack
