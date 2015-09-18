@@ -68,6 +68,7 @@ brew cask install font-source-serif-pro
 brew cask install font-terminus
 brew cask install font-ubuntu
 brew cask install font-ubuntu-mono-powerline
+brew cask install font-work-sans
 brew cask install gitter
 brew cask install google-chrome
 brew cask install google-drive
@@ -85,7 +86,9 @@ brew cask install nosleep
 brew cask install numi
 brew cask install rightfont
 brew cask install rowanj-gitx
+brew cask install shimeike-formulatepro
 brew cask install sketch-toolbox
+brew cask install skim
 brew cask install skitch
 brew cask install skype
 brew cask install slack

@@ -237,6 +237,7 @@ cask:
 - font-terminus 4.39
 - font-ubuntu 0.80
 - font-ubuntu-mono-powerline latest
+- font-work-sans 1.32
 - gitter 1.162
 - google-chrome latest
 - google-drive latest
@@ -254,7 +255,9 @@ cask:
 - numi latest
 - rightfont latest
 - rowanj-gitx 0.15.1964
+- shimeike-formulatepro 0.0.6
 - sketch-toolbox latest
+- skim 1.4.13
 - skitch 2.7.8
 - skype latest
 - slack 1.1.3
