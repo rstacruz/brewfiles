@@ -72,7 +72,6 @@ brew cask install font-work-sans
 brew cask install gitter
 brew cask install google-chrome
 brew cask install google-drive
-brew cask install google-photos-backup
 brew cask install gyazo
 brew cask install isolator
 brew cask install iterm2
@@ -97,6 +96,9 @@ brew cask install techstoreclub-simple-comic
 brew cask install the-unarchiver
 brew cask install thyme
 brew cask install transmission
+brew cask install unsplash-wallpaper
 brew cask install viber
 brew cask install virtualbox
 brew cask install vlc
+brew cask install vox
+brew cask install wallpaper-wizard

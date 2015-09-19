@@ -16,7 +16,7 @@ brew:
 - autojump 22.2.4
 - automake 1.15
 - aws-elasticbeanstalk 3.5.2
-- awscli 1.7.47 1.8.1 1.8.2
+- awscli 1.7.47 1.8.1 1.8.2 1.8.6
 - bdw-gc 7.4.2
 - boost 1.58.0
 - boost-python 1.58.0
@@ -29,14 +29,14 @@ brew:
 - chruby 0.3.9
 - chruby-fish HEAD
 - cloc 1.64
-- cmake 3.3.1
+- cmake 3.3.1 3.3.2
 - cscope 15.8a
 - ctags 5.8_1
 - deis 1.5.1
 - deisctl 1.9.0
 - direnv 2.7.0
 - dirmngr 1.1.1_1
-- docker 1.8.1 1.8.2
+- docker 1.8.2
 - docker-machine 0.4.1
 - doxygen 1.8.10
 - emacs 24.5
@@ -66,7 +66,7 @@ brew:
 - gnupg 1.4.19
 - gnupg2 2.0.29
 - gnutls 3.3.17.1
-- go 1.5 1.5.1
+- go 1.5.1
 - gobject-introspection 1.44.0
 - gpg-agent 2.0.28
 - gpp 2.24
@@ -87,13 +87,13 @@ brew:
 - json-c 0.12
 - lame 3.99.5
 - ledger 3.1_1
-- libassuan 2.3.0 2.3.0_1
+- libassuan 2.3.0_1
 - libepoxy 1.3.1
 - libevent 2.0.22
 - libffi 3.0.13
 - libgcrypt 1.6.4
 - libgeotiff 1.4.1_1
-- libgpg-error 1.20 1.20_1
+- libgpg-error 1.20_1
 - libksba 1.3.3
 - liblwgeom 2.1.5_1
 - libogg 1.3.2
@@ -159,7 +159,7 @@ brew:
 - ssh-copy-id 6.8p1
 - terminal-notifier 1.6.3
 - texi2html 1.82
-- the_silver_searcher 0.30.0 0.31.0
+- the_silver_searcher 0.31.0
 - tig 2.1.1
 - tmux 2.0
 - tree 1.7.0
@@ -170,7 +170,7 @@ brew:
 - xvid 1.3.4
 - xz 5.2.1
 - yasm 1.3.0
-- youtube-dl 2015.09.03 2015.09.09
+- youtube-dl 2015.09.09
 - zsh 5.1
 
 cask:
@@ -193,7 +193,7 @@ cask:
 - cyberduck 4.7.2
 - deeper latest
 - dropbox latest
-- evernote 6.1_452115
+- evernote 6.1.1_452253
 - firefox 40.0.3
 - flash-player 18.0.0.232
 - fluid 1.8.4
@@ -241,7 +241,6 @@ cask:
 - gitter 1.162
 - google-chrome latest
 - google-drive latest
-- google-photos-backup latest
 - gyazo 2.1
 - isolator 4.9beta
 - iterm2 2.1.1
@@ -253,12 +252,12 @@ cask:
 - noizio 1.1
 - nosleep 1.4.0
 - numi latest
-- rightfont latest
+- rightfont 1.1.0
 - rowanj-gitx 0.15.1964
 - sketch-toolbox latest
 - skitch 2.7.8
 - skype latest
-- slack 1.1.3
+- slack 1.1.4
 - smoothmouse latest
 - spectacle 1.0.1
 - spotify latest
@@ -266,6 +265,9 @@ cask:
 - the-unarchiver 3.9.1
 - thyme 0.5.1
 - transmission 2.84
+- unsplash-wallpaper 1330_1440930902
 - viber latest
 - virtualbox 5.0.4-102546
 - vlc 2.2.1
+- vox latest
+- wallpaper-wizard 1.5.1
