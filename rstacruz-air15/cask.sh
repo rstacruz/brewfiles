@@ -13,6 +13,7 @@ brew cask install alfred
 brew cask install alternote
 brew cask install aluxian-messenger
 brew cask install appcleaner
+brew cask install awareness
 brew cask install bartender
 brew cask install bettertouchtool
 brew cask install carbon-copy-cloner
@@ -54,6 +55,7 @@ brew cask install font-liberation-mono-for-powerline
 brew cask install font-meddon
 brew cask install font-merriweather
 brew cask install font-meslo-lg-for-powerline
+brew cask install font-monoid
 brew cask install font-montserrat
 brew cask install font-open-sans
 brew cask install font-open-sans-condensed

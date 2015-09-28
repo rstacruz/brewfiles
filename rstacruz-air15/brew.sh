@@ -57,6 +57,7 @@ brew install ghub
 brew install gifify
 brew install giflib
 brew install git
+brew install git-cal
 brew install git-extras
 brew install glib
 brew install gmp
@@ -81,7 +82,6 @@ brew install httpie
 brew install hub
 brew install icu4c
 brew install imagemagick
-brew install iojs
 brew install jpeg
 brew install json-c
 brew install lame
@@ -156,6 +156,7 @@ brew install sfcgal
 brew install speedtest_cli
 brew install sqlite
 brew install ssh-copy-id
+brew install subliminal
 brew install terminal-notifier
 brew install texi2html
 brew install the_silver_searcher
