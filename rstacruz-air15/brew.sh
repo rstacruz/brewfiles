@@ -36,13 +36,13 @@ brew install deisctl
 brew install direnv
 brew install dirmngr
 brew install docker
+brew install docker-compose
 brew install docker-machine
 brew install doxygen
 brew install emacs
 brew install expat
 brew install faac
 brew install ffmpeg
-brew install fig
 brew install fish
 brew install fontconfig
 brew install fpp
@@ -83,6 +83,7 @@ brew install hub
 brew install icu4c
 brew install imagemagick
 brew install jpeg
+brew install jq
 brew install json-c
 brew install lame
 brew install ledger
@@ -114,6 +115,7 @@ brew install lua
 brew install luajit
 brew install lzlib
 brew install mackup
+brew install macvim
 brew install md5sha1sum
 brew install meld
 brew install mercurial
@@ -126,6 +128,7 @@ brew install ninja
 brew install nmap
 brew install node
 brew install nvm
+brew install oniguruma
 brew install openssl
 brew install optipng
 brew install ossp-uuid
