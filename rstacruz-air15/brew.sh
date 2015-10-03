@@ -59,6 +59,7 @@ brew install giflib
 brew install git
 brew install git-cal
 brew install git-extras
+brew install git-lfs
 brew install glib
 brew install gmp
 brew install gnome-icon-theme
