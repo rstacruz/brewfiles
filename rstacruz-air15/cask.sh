@@ -104,3 +104,4 @@ brew cask install virtualbox
 brew cask install vlc
 brew cask install vox
 brew cask install wallpaper-wizard
+brew cask install yujitach-menumeters
