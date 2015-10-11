@@ -179,6 +179,7 @@ brew:
 - zsh 5.1.1
 
 cask:
+- adobe-creative-cloud latest
 - airfoil latest
 - airserver 6.0.1
 - alarm-clock 2.4.5
@@ -195,7 +196,7 @@ cask:
 - coconutbattery 3.2.1
 - colloquy 2.4.3
 - colorpicker-hex 1.6.1
-- crashplan 4.3.0
+- crashplan 4.4.1
 - cyberduck 4.7.2
 - deeper latest
 - dropbox latest
@@ -234,6 +235,7 @@ cask:
 - font-open-sans latest
 - font-open-sans-condensed latest
 - font-raleway latest
+- font-roboto 1.200311
 - font-rokkitt latest
 - font-sauce-code-powerline latest
 - font-sinkin-sans 1.000
@@ -250,7 +252,7 @@ cask:
 - google-drive latest
 - gyazo 3.1.2
 - isolator 4.9beta
-- iterm2 2.1.3
+- iterm2 2.1.4
 - karabiner 10.9.0
 - keepingyouawake 1.2.1
 - keyboard-cleaner latest
@@ -278,4 +280,4 @@ cask:
 - vlc 2.2.1
 - vox latest
 - wallpaper-wizard 1.5.1
-- yujitach-menumeters 1.9
+- yujitach-menumeters 1.9.1

@@ -6,6 +6,7 @@ brew tap caskroom/fonts
 brew install caskroom/cask/brew-cask
 
 # casks
+brew cask install adobe-creative-cloud
 brew cask install airfoil
 brew cask install airserver
 brew cask install alarm-clock
@@ -60,6 +61,7 @@ brew cask install font-montserrat
 brew cask install font-open-sans
 brew cask install font-open-sans-condensed
 brew cask install font-raleway
+brew cask install font-roboto
 brew cask install font-rokkitt
 brew cask install font-sauce-code-powerline
 brew cask install font-sinkin-sans
