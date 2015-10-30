@@ -89,6 +89,7 @@ brew cask install nosleep
 brew cask install numi
 brew cask install rightfont
 brew cask install rowanj-gitx
+brew cask install rss
 brew cask install sketch-toolbox
 brew cask install skitch
 brew cask install skype
@@ -96,10 +97,13 @@ brew cask install slack
 brew cask install smoothmouse
 brew cask install spectacle
 brew cask install spotify
+brew cask install stand
+brew cask install steam
 brew cask install techstoreclub-simple-comic
 brew cask install the-unarchiver
 brew cask install thyme
 brew cask install transmission
+brew cask install tunnelblick
 brew cask install unsplash-wallpaper
 brew cask install viber
 brew cask install virtualbox

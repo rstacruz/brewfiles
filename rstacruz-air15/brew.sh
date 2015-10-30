@@ -43,7 +43,7 @@ brew install emacs
 brew install expat
 brew install faac
 brew install ffmpeg
-brew install fish
+brew install fish --HEAD
 brew install fontconfig
 brew install fpp
 brew install freetype
@@ -60,6 +60,7 @@ brew install git
 brew install git-cal
 brew install git-extras
 brew install git-lfs
+brew install github-release
 brew install glib
 brew install gmp
 brew install gnome-icon-theme
@@ -136,11 +137,13 @@ brew install ossp-uuid
 brew install pango
 brew install pass
 brew install pcre
+brew install pcre2
 brew install phantomjs192
 brew install pinentry
 brew install pixman
 brew install pkg-config
 brew install postgresql
+brew install prettyping
 brew install proj
 brew install pth
 brew install pwgen
