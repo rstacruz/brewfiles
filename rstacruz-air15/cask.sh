@@ -18,6 +18,7 @@ brew cask install awareness
 brew cask install bartender
 brew cask install bettertouchtool
 brew cask install carbon-copy-cloner
+brew cask install cathode
 brew cask install ccleaner
 brew cask install chromium
 brew cask install coconutbattery
@@ -83,6 +84,7 @@ brew cask install karabiner
 brew cask install keepingyouawake
 brew cask install keyboard-cleaner
 brew cask install licecap
+brew cask install little-snitch
 brew cask install macdown
 brew cask install noizio
 brew cask install nosleep
@@ -90,6 +92,8 @@ brew cask install numi
 brew cask install rightfont
 brew cask install rowanj-gitx
 brew cask install rss
+brew cask install screenhero
+brew cask install shortcat
 brew cask install sketch-toolbox
 brew cask install skitch
 brew cask install skype
@@ -109,5 +113,7 @@ brew cask install viber
 brew cask install virtualbox
 brew cask install vlc
 brew cask install vox
+brew cask install vuze
 brew cask install wallpaper-wizard
+brew cask install waterroof
 brew cask install yujitach-menumeters

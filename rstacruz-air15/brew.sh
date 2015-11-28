@@ -63,6 +63,7 @@ brew install git-lfs
 brew install github-release
 brew install glib
 brew install gmp
+brew install gmp4
 brew install gnome-icon-theme
 brew install gnu-getopt
 brew install gnupg
@@ -160,6 +161,7 @@ brew install ruby-install
 brew install s3cmd
 brew install sassc
 brew install sfcgal
+brew install sift
 brew install speedtest_cli
 brew install sqlite
 brew install ssh-copy-id
