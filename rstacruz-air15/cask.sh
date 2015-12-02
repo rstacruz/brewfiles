@@ -14,7 +14,6 @@ brew cask install alfred
 brew cask install alternote
 brew cask install aluxian-messenger
 brew cask install appcleaner
-brew cask install awareness
 brew cask install bartender
 brew cask install bettertouchtool
 brew cask install carbon-copy-cloner
@@ -101,13 +100,11 @@ brew cask install slack
 brew cask install smoothmouse
 brew cask install spectacle
 brew cask install spotify
-brew cask install stand
 brew cask install steam
 brew cask install techstoreclub-simple-comic
 brew cask install the-unarchiver
 brew cask install thyme
 brew cask install transmission
-brew cask install tunnelblick
 brew cask install unsplash-wallpaper
 brew cask install viber
 brew cask install virtualbox
