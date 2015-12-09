@@ -2,6 +2,7 @@
 
 # taps
 brew tap aredridel/iojs
+brew tap homebrew/command-not-found
 brew tap homebrew/services
 brew tap homebrew/versions
 brew tap homebrew/x11
@@ -21,6 +22,7 @@ brew install boost
 brew install boost-python
 brew install boot2docker
 brew install brew-cask
+brew install cabal-install
 brew install cairo
 brew install cask
 brew install cgal
@@ -53,12 +55,14 @@ brew install gdbm
 brew install gdk-pixbuf
 brew install geos
 brew install gettext
+brew install ghc
 brew install ghub
 brew install gifify
 brew install giflib
 brew install git
 brew install git-cal
 brew install git-extras
+brew install git-fresh
 brew install git-lfs
 brew install github-release
 brew install glib
@@ -78,6 +82,7 @@ brew install gsettings-desktop-schemas
 brew install gtk+3
 brew install gtksourceview3
 brew install harfbuzz
+brew install haskell-stack
 brew install heroku-toolbelt
 brew install hicolor-icon-theme
 brew install htop-osx
@@ -166,6 +171,7 @@ brew install speedtest_cli
 brew install sqlite
 brew install ssh-copy-id
 brew install subliminal
+brew install task
 brew install terminal-notifier
 brew install texi2html
 brew install the_silver_searcher
@@ -173,6 +179,7 @@ brew install tig
 brew install tmux
 brew install tree
 brew install v8
+brew install vit
 brew install w3m
 brew install wget
 brew install x264

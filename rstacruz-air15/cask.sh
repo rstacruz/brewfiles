@@ -88,11 +88,13 @@ brew cask install macdown
 brew cask install noizio
 brew cask install nosleep
 brew cask install numi
+brew cask install qbittorrent
 brew cask install rightfont
 brew cask install rowanj-gitx
 brew cask install rss
 brew cask install screenhero
 brew cask install shortcat
+brew cask install sketch
 brew cask install sketch-toolbox
 brew cask install skitch
 brew cask install skype
@@ -113,4 +115,5 @@ brew cask install vox
 brew cask install vuze
 brew cask install wallpaper-wizard
 brew cask install waterroof
+brew cask install ynab
 brew cask install yujitach-menumeters
