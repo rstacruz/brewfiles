@@ -279,7 +279,6 @@ cask:
 - rowanj-gitx 0.15.1964
 - rss latest
 - screenhero latest
-- shortcat 0.7.6
 - sketch latest
 - sketch-toolbox latest
 - skitch 2.7.8
@@ -298,8 +297,5 @@ cask:
 - virtualbox 5.0.10-104061
 - vlc 2.2.1
 - vox latest
-- vuze latest
-- wallpaper-wizard 1.5.1
-- waterroof 3.8
 - ynab 4.3.655
 - yujitach-menumeters 1.9.1

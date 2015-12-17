@@ -3,7 +3,6 @@
 # taps
 brew tap caskroom/cask
 brew tap caskroom/fonts
-brew install caskroom/cask/brew-cask
 
 # casks
 brew cask install adobe-creative-cloud
@@ -93,7 +92,6 @@ brew cask install rightfont
 brew cask install rowanj-gitx
 brew cask install rss
 brew cask install screenhero
-brew cask install shortcat
 brew cask install sketch
 brew cask install sketch-toolbox
 brew cask install skitch
@@ -112,8 +110,5 @@ brew cask install viber
 brew cask install virtualbox
 brew cask install vlc
 brew cask install vox
-brew cask install vuze
-brew cask install wallpaper-wizard
-brew cask install waterroof
 brew cask install ynab
 brew cask install yujitach-menumeters
