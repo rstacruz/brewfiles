@@ -21,7 +21,6 @@ brew install bdw-gc
 brew install boost
 brew install boost-python
 brew install boot2docker
-brew install brew-cask
 brew install cabal-install
 brew install cairo
 brew install cask
@@ -50,6 +49,7 @@ brew install fontconfig
 brew install fpp
 brew install freetype
 brew install freexl
+brew install fzf
 brew install gdal
 brew install gdbm
 brew install gdk-pixbuf
