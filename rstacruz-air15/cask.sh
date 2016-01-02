@@ -110,5 +110,6 @@ brew cask install viber
 brew cask install virtualbox
 brew cask install vlc
 brew cask install vox
+brew cask install xquartz
 brew cask install ynab
 brew cask install yujitach-menumeters

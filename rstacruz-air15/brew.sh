@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 # taps
-brew tap aredridel/iojs
 brew tap homebrew/command-not-found
 brew tap homebrew/services
 brew tap homebrew/versions
@@ -22,6 +21,7 @@ brew install boost
 brew install boost-python
 brew install boot2docker
 brew install cabal-install
+brew install cabextract
 brew install cairo
 brew install cask
 brew install cgal
@@ -44,12 +44,14 @@ brew install emacs
 brew install expat
 brew install faac
 brew install ffmpeg
+brew install figlet
 brew install fish --HEAD
 brew install fontconfig
 brew install fpp
 brew install freetype
 brew install freexl
 brew install fzf
+brew install gd
 brew install gdal
 brew install gdbm
 brew install gdk-pixbuf
@@ -90,18 +92,23 @@ brew install httpie
 brew install hub
 brew install icu4c
 brew install imagemagick
+brew install jasper
 brew install jpeg
 brew install jq
 brew install json-c
+brew install jsonpp
 brew install lame
 brew install ledger
 brew install libassuan
+brew install libcaca
 brew install libepoxy
 brew install libevent
 brew install libffi
 brew install libgcrypt
 brew install libgeotiff
 brew install libgpg-error
+brew install libgphoto2
+brew install libicns
 brew install libksba
 brew install liblwgeom
 brew install libogg
@@ -119,11 +126,13 @@ brew install libvpx
 brew install libxml2
 brew install libyaml
 brew install links
+brew install little-cms2
 brew install lua
 brew install luajit
 brew install lzlib
 brew install mackup
 brew install macvim
+brew install makedepend
 brew install md5sha1sum
 brew install meld
 brew install mercurial
@@ -132,6 +141,7 @@ brew install mr
 brew install mysql
 brew install neovim --HEAD
 brew install nettle
+brew install ngrok
 brew install ninja
 brew install nmap
 brew install node
@@ -140,6 +150,7 @@ brew install oniguruma
 brew install openssl
 brew install optipng
 brew install ossp-uuid
+brew install p7zip
 brew install pango
 brew install pass
 brew install pcre
@@ -157,6 +168,7 @@ brew install py2cairo
 brew install pygobject3
 brew install python
 brew install python3
+brew install ranger
 brew install readline
 brew install reattach-to-user-namespace
 brew install redis
@@ -164,6 +176,7 @@ brew install ruby
 brew install ruby-build
 brew install ruby-install
 brew install s3cmd
+brew install sane-backends
 brew install sassc
 brew install sfcgal
 brew install sift
@@ -177,11 +190,15 @@ brew install texi2html
 brew install the_silver_searcher
 brew install tig
 brew install tmux
+brew install toilet
 brew install tree
+brew install unrar
 brew install v8
 brew install vit
 brew install w3m
 brew install wget
+brew install wine
+brew install winetricks
 brew install x264
 brew install xvid
 brew install xz

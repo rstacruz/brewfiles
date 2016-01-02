@@ -1,6 +1,5 @@
 ---
 taps:
-- aredridel/iojs
 - caskroom/cask
 - caskroom/fonts
 - homebrew/command-not-found
@@ -23,6 +22,7 @@ brew:
 - boost-python 1.59.0
 - boot2docker 1.8.0
 - cabal-install 1.22.6.0
+- cabextract 1.6
 - cairo 1.14.4
 - cask 0.7.3
 - cgal 4.6.3 4.7
@@ -45,12 +45,14 @@ brew:
 - expat 2.1.0_1
 - faac 1.28
 - ffmpeg 2.8.1_1 2.8.3
+- figlet 2.2.5
 - fish HEAD
 - fontconfig 2.11.1
 - fpp 0.6.2 0.7.0
 - freetype 2.6_1
 - freexl 1.0.2
 - fzf 0.10.9
+- gd 2.1.1
 - gdal 1.11.3 1.11.3_1
 - gdbm 1.11
 - gdk-pixbuf 2.32.2 2.32.3
@@ -91,18 +93,23 @@ brew:
 - hub 2.2.2
 - icu4c 55.1 56.1
 - imagemagick 6.9.2-5 6.9.2-8
+- jasper 1.900.1
 - jpeg 8d
 - jq 1.5
 - json-c 0.12
+- jsonpp 1.2.0
 - lame 3.99.5
 - ledger 3.1_1
 - libassuan 2.4.0 2.4.2
+- libcaca 0.99b19
 - libepoxy 1.3.1
 - libevent 2.0.22
 - libffi 3.0.13
 - libgcrypt 1.6.4 1.6.4_1
 - libgeotiff 1.4.1_1
 - libgpg-error 1.20_1 1.21
+- libgphoto2 2.5.9
+- libicns 0.8.1_1
 - libksba 1.3.3
 - liblwgeom 2.1.5_1 2.1.5_2
 - libogg 1.3.2
@@ -120,11 +127,13 @@ brew:
 - libxml2 2.9.2 2.9.3
 - libyaml 0.1.6_1
 - links 2.12
+- little-cms2 2.7
 - lua 5.2.4_1
 - luajit 2.0.4_1
 - lzlib 1.7
 - mackup 0.8.12
 - macvim 7.4-81 7.4-86
+- makedepend 1.0.5
 - md5sha1sum 0.9.5
 - meld 3.14.1
 - mercurial 3.6.1 3.6.2
@@ -133,6 +142,7 @@ brew:
 - mysql 5.7.10 5.7.9
 - neovim HEAD
 - nettle 2.7.1
+- ngrok 1.7.1
 - ninja 1.6.0
 - nmap 6.47 7.00
 - node 5.0.0 5.3.0
@@ -141,6 +151,7 @@ brew:
 - openssl 1.0.2e
 - optipng 0.7.5
 - ossp-uuid 1.6.2_1
+- p7zip 9.20.1
 - pango 1.38.1
 - pass 1.6.5
 - pcre 8.37 8.38
@@ -158,6 +169,7 @@ brew:
 - pygobject3 3.18.2
 - python 2.7.10_2 2.7.11
 - python3 3.5.0 3.5.1
+- ranger 1.7.2
 - readline 6.3.8
 - reattach-to-user-namespace 2.4
 - redis 3.0.5
@@ -165,6 +177,7 @@ brew:
 - ruby-build 20151028 20151216
 - ruby-install 0.5.0
 - s3cmd 1.6.0
+- sane-backends 1.0.24_1
 - sassc 3.2.5 3.3.2
 - sfcgal 1.2.0
 - sift 0.5.0
@@ -178,11 +191,15 @@ brew:
 - the_silver_searcher 0.31.0
 - tig 2.1.1
 - tmux 2.1
+- toilet 0.3
 - tree 1.7.0
+- unrar 5.3.8
 - v8 4.6.85.31 4.7.80.25
 - vit 1.2_1
 - w3m 0.5.3
 - wget 1.16.3 1.17.1
+- wine 1.6.2_1
+- winetricks 20151116
 - x264 r2601
 - xvid 1.3.4
 - xz 5.2.2
@@ -297,5 +314,6 @@ cask:
 - virtualbox 5.0.10-104061
 - vlc 2.2.1
 - vox latest
+- xquartz 2.7.8
 - ynab 4.3.655
 - yujitach-menumeters 1.9.1
