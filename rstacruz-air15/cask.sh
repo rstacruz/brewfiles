@@ -65,7 +65,6 @@ brew cask install font-rokkitt
 brew cask install font-sauce-code-powerline
 brew cask install font-sinkin-sans
 brew cask install font-source-code-pro
-brew cask install font-source-code-pro-for-powerline
 brew cask install font-source-sans-pro
 brew cask install font-source-serif-pro
 brew cask install font-terminus

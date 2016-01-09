@@ -33,14 +33,15 @@ brew install cmake
 brew install cscope
 brew install ctags
 brew install deis
-brew install deisctl
 brew install direnv
 brew install dirmngr
 brew install docker
 brew install docker-compose
 brew install docker-machine
 brew install doxygen
+brew install elixir
 brew install emacs
+brew install erlang
 brew install expat
 brew install faac
 brew install ffmpeg
@@ -77,6 +78,7 @@ brew install gnupg2
 brew install gnutls
 brew install go
 brew install gobject-introspection
+brew install godep
 brew install gpg-agent
 brew install gpp
 brew install graphicsmagick
@@ -186,12 +188,14 @@ brew install ssh-copy-id
 brew install subliminal
 brew install task
 brew install terminal-notifier
+brew install terraform
 brew install texi2html
 brew install the_silver_searcher
 brew install tig
 brew install tmux
 brew install toilet
 brew install tree
+brew install unixodbc
 brew install unrar
 brew install v8
 brew install vit
@@ -199,6 +203,7 @@ brew install w3m
 brew install wget
 brew install wine
 brew install winetricks
+brew install wxmac
 brew install x264
 brew install xvid
 brew install xz
