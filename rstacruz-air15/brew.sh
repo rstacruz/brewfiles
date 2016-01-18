@@ -16,6 +16,7 @@ brew install autojump
 brew install automake
 brew install aws-elasticbeanstalk
 brew install awscli
+brew install azure-cli
 brew install bdw-gc
 brew install boost
 brew install boost-python
@@ -73,6 +74,7 @@ brew install gmp
 brew install gmp4
 brew install gnome-icon-theme
 brew install gnu-getopt
+brew install gnu-sed
 brew install gnupg
 brew install gnupg2
 brew install gnutls
@@ -181,6 +183,7 @@ brew install s3cmd
 brew install sane-backends
 brew install sassc
 brew install sfcgal
+brew install siege
 brew install sift
 brew install speedtest_cli
 brew install sqlite

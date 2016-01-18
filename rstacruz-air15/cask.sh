@@ -33,6 +33,7 @@ brew cask install fluid
 brew cask install flux
 brew cask install font-anonymous-pro-for-powerline
 brew cask install font-arimo
+brew cask install font-baron
 brew cask install font-bebas-neue
 brew cask install font-bitter
 brew cask install font-clear-sans
@@ -48,6 +49,7 @@ brew cask install font-inconsolata-dz-for-powerline
 brew cask install font-inconsolata-for-powerline
 brew cask install font-inconsolata-g-for-powerline
 brew cask install font-input
+brew cask install font-jaapokki
 brew cask install font-karla
 brew cask install font-league-gothic
 brew cask install font-league-script
@@ -83,9 +85,11 @@ brew cask install keyboard-cleaner
 brew cask install licecap
 brew cask install little-snitch
 brew cask install macdown
+brew cask install musescore
 brew cask install noizio
 brew cask install nosleep
 brew cask install numi
+brew cask install playback
 brew cask install qbittorrent
 brew cask install rightfont
 brew cask install rowanj-gitx
