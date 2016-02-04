@@ -11,7 +11,6 @@ brew cask install airserver
 brew cask install alarm-clock
 brew cask install alfred
 brew cask install alternote
-brew cask install aluxian-messenger
 brew cask install appcleaner
 brew cask install bartender
 brew cask install bettertouchtool
@@ -25,6 +24,7 @@ brew cask install colorpicker-hex
 brew cask install crashplan
 brew cask install cyberduck
 brew cask install deeper
+brew cask install dockertoolbox
 brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
@@ -101,6 +101,7 @@ brew cask install skitch
 brew cask install skype
 brew cask install slack
 brew cask install smoothmouse
+brew cask install soundnode
 brew cask install spectacle
 brew cask install spotify
 brew cask install steam
@@ -111,6 +112,7 @@ brew cask install transmission
 brew cask install unsplash-wallpaper
 brew cask install viber
 brew cask install virtualbox
+brew cask install virtualbox-extension-pack
 brew cask install vlc
 brew cask install vox
 brew cask install xquartz

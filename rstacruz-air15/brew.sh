@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 # taps
+brew tap codekitchen/dinghy
 brew tap homebrew/command-not-found
 brew tap homebrew/services
 brew tap homebrew/versions
@@ -36,6 +37,7 @@ brew install ctags
 brew install deis
 brew install direnv
 brew install dirmngr
+brew install dnsmasq
 brew install docker
 brew install docker-compose
 brew install docker-machine
@@ -198,6 +200,7 @@ brew install tig
 brew install tmux
 brew install toilet
 brew install tree
+brew install unfs3
 brew install unixodbc
 brew install unrar
 brew install v8
