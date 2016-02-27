@@ -13,6 +13,7 @@ brew cask install alfred
 brew cask install alternote
 brew cask install appcleaner
 brew cask install bartender
+brew cask install battle-net
 brew cask install bettertouchtool
 brew cask install carbon-copy-cloner
 brew cask install cathode
@@ -84,6 +85,7 @@ brew cask install keepingyouawake
 brew cask install keyboard-cleaner
 brew cask install licecap
 brew cask install little-snitch
+brew cask install logitech-control-center
 brew cask install macdown
 brew cask install musescore
 brew cask install noizio
@@ -110,6 +112,7 @@ brew cask install the-unarchiver
 brew cask install thyme
 brew cask install transmission
 brew cask install unsplash-wallpaper
+brew cask install usb-overdrive
 brew cask install viber
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
