@@ -13,6 +13,7 @@ brew cask install alfred
 brew cask install alternote
 brew cask install appcleaner
 brew cask install bartender
+brew cask install barxtemp
 brew cask install battle-net
 brew cask install bettertouchtool
 brew cask install carbon-copy-cloner
@@ -75,6 +76,7 @@ brew cask install font-ubuntu
 brew cask install font-ubuntu-mono-powerline
 brew cask install font-work-sans
 brew cask install gitter
+brew cask install glyphs
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install gyazo
@@ -103,6 +105,7 @@ brew cask install skitch
 brew cask install skype
 brew cask install slack
 brew cask install smoothmouse
+brew cask install soulseek
 brew cask install soundnode
 brew cask install spectacle
 brew cask install spotify
@@ -111,8 +114,8 @@ brew cask install techstoreclub-simple-comic
 brew cask install the-unarchiver
 brew cask install thyme
 brew cask install transmission
+brew cask install ubersicht
 brew cask install unsplash-wallpaper
-brew cask install usb-overdrive
 brew cask install viber
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
