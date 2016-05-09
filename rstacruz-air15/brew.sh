@@ -2,6 +2,7 @@
 
 # taps
 brew tap codekitchen/dinghy
+brew tap homebrew/boneyard
 brew tap homebrew/command-not-found
 brew tap homebrew/services
 brew tap homebrew/versions
@@ -10,6 +11,7 @@ brew tap neovim/neovim
 brew tap rstacruz/backup
 
 # packages
+brew install android-sdk
 brew install aria2
 brew install atk
 brew install autoconf
@@ -183,10 +185,10 @@ brew install ruby-build
 brew install ruby-install
 brew install s3cmd
 brew install sane-backends
-brew install sassc
 brew install sfcgal
 brew install siege
 brew install sift
+brew install sl
 brew install speedtest_cli
 brew install sqlite
 brew install ssh-copy-id

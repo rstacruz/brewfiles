@@ -19,6 +19,7 @@ brew cask install bettertouchtool
 brew cask install carbon-copy-cloner
 brew cask install cathode
 brew cask install ccleaner
+brew cask install cgoban
 brew cask install chromium
 brew cask install coconutbattery
 brew cask install colloquy
@@ -29,6 +30,7 @@ brew cask install deeper
 brew cask install dockertoolbox
 brew cask install dropbox
 brew cask install evernote
+brew cask install fantastical
 brew cask install firefox
 brew cask install flash-player
 brew cask install fluid
@@ -82,15 +84,17 @@ brew cask install google-drive
 brew cask install gyazo
 brew cask install isolator
 brew cask install iterm2
+brew cask install java
 brew cask install karabiner
 brew cask install keepingyouawake
 brew cask install keyboard-cleaner
+brew cask install kodi
 brew cask install licecap
 brew cask install little-snitch
 brew cask install logitech-control-center
 brew cask install macdown
+brew cask install minecraft
 brew cask install musescore
-brew cask install noizio
 brew cask install nosleep
 brew cask install numi
 brew cask install playback
