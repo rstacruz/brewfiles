@@ -163,6 +163,7 @@ brew install pango
 brew install pass
 brew install pcre
 brew install pcre2
+brew install phantomjs
 brew install phantomjs192
 brew install pinentry
 brew install pixman

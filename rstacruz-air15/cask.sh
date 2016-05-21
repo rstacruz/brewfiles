@@ -11,6 +11,7 @@ brew cask install airserver
 brew cask install alarm-clock
 brew cask install alfred
 brew cask install alternote
+brew cask install android-studio
 brew cask install appcleaner
 brew cask install bartender
 brew cask install barxtemp
@@ -98,7 +99,9 @@ brew cask install musescore
 brew cask install nosleep
 brew cask install numi
 brew cask install playback
+brew cask install plex-media-server
 brew cask install qbittorrent
+brew cask install reaper
 brew cask install rightfont
 brew cask install rowanj-gitx
 brew cask install rss
