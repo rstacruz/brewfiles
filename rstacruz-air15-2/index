@@ -23,7 +23,6 @@ brew:
 - automake 1.15
 - aws-elasticbeanstalk 3.7.3
 - awscli 1.10.1 1.10.12 1.9.13 1.9.17 1.9.6
-- azure-cli 0.9.13 0.9.16
 - bdw-gc 7.4.2
 - boost 1.60.0_1
 - boost-python 1.60.0
@@ -45,13 +44,11 @@ brew:
 - direnv 2.7.0
 - dirmngr 1.1.1_1
 - dnsmasq 2.75
-- docker 1.10.3
-- docker-compose 1.5.2
-- docker-machine 0.6.0
 - doxygen 1.8.11
 - elinks 0.11.7_2
 - elixir 1.2.3
 - emacs 24.5
+- emp 0.10.1
 - entr 3.5
 - erlang 18.2.1
 - expat 2.1.0_1
@@ -101,14 +98,17 @@ brew:
 - gtksourceview3 3.18.2
 - harfbuzz 1.1.2 1.1.3 1.2.1 1.2.6
 - haskell-stack 1.0.4
-- heroku-toolbelt 3.42.22 3.42.33 3.42.38
+- heroku 3.42.22 3.42.33 3.42.38
 - hicolor-icon-theme 0.15
+- hledger 0.27.1
 - htop-osx 0.8.2.8
+- httperf 0.9.0_1
 - httpie 0.9.3
 - hub 2.2.3
-- icu4c 56.1 57.1
+- icu4c 57.1
 - imagemagick 6.9.3-6
 - jasper 1.900.1
+- jmeter 3.0
 - jpeg 8d
 - jq 1.5
 - json-c 0.12
@@ -129,10 +129,11 @@ brew:
 - libksba 1.3.3
 - liblwgeom 2.1.5_2
 - libogg 1.3.2
-- libpng 1.6.21 1.6.23
+- libpng 1.6.23
 - libsass 3.3.3
 - libsodium 1.0.10
 - libspatialite 4.3.0 4.3.0a_1
+- libssh2 1.7.0
 - libtasn1 4.7
 - libtiff 4.0.6 4.0.6_1
 - libtool 2.4.6
@@ -166,20 +167,20 @@ brew:
 - node 5.3.0 5.4.0 5.5.0 5.8.0
 - nvm 0.31.0
 - oniguruma 5.9.6
-- openssl 1.0.2g 1.0.2h_1
+- openssl 1.0.2h_1
 - optipng 0.7.5
 - ossp-uuid 1.6.2_1
 - p7zip 15.09
 - pandoc 1.17.0.3
 - pango 1.38.1
 - pass 1.6.5
-- pcre 8.38 8.39
+- pcre 8.39
 - pcre2 10.20
 - phantomjs 2.1.1
 - phantomjs192 1.9.2
 - pinentry 0.9.7
 - pixman 0.34.0
-- pkg-config 0.29.1
+- pkg-config 0.29.1_1
 - postgresql 9.4.5_2 9.5.1
 - prettyping 1.0.0
 - proj 4.9.2
@@ -197,8 +198,10 @@ brew:
 - ruby 2.3.0
 - ruby-build 20160228
 - ruby-install 0.6.0
+- rust 1.10.0
 - s3cmd 1.6.1
 - sane-backends 1.0.24_1
+- sdl2 2.0.4
 - sfcgal 1.2.2
 - siege 3.1.3
 - sift 0.8.0
@@ -238,29 +241,23 @@ brew:
 
 cask:
 - adobe-creative-cloud latest
-- airfoil latest, 5.1.0
-- airserver 6.0.7, 5.3.2
-- alarm-clock 2.4.5
-- alfred 3.0.2_676, 2.7.2_400
-- alternote 1.0.5_1005, 1.0.10_1010
-- aluxian-messenger (!) 1.4.3
-- android-studio 2.1.2.0,143.2915827, 1.5.1.0_2456560
-- appcleaner 3.3, 2.3
+- airserver 5.3.2 6.0.7
+- alfred 2.7.2_400 3.0.2_676
+- alternote 1.0.5_1005 1.0.10_1010
+- android-file-transfer latest
+- android-studio 1.5.1.0_2456560 2.1.2.0,143.2915827
+- appcleaner 2.3 3.3
 - awareness 1.1
-- bartender 2.0.207, 2.0.7, 1.2.39
-- barxtemp 1.3.2
+- bartender 1.2.39 2.0.207 2.0.7
 - battle-net latest
-- bettertouchtool 1.75, 1.15
+- bettertouchtool 1.15 1.75
 - carbon-copy-cloner latest
 - cathode 2.3.0
-- cgoban latest
-- chromium latest
-- coconutbattery 3.3.3, 3.2.1
+- coconutbattery 3.2.1 3.3.3
 - colloquy 2.4.3
 - colorpicker-hex 1.6.1
 - crashplan 
 - cyberduck 4.7.2
-- deeper latest
 - dropbox latest
 - evernote 6.1_452115
 - fantastical 2.1.5
@@ -311,12 +308,14 @@ cask:
 - font-ubuntu 0.80
 - font-ubuntu-mono-powerline latest
 - font-work-sans 1.32
+- gimp 2.8.18-x86_64
 - gitter 1.162
 - glyphs 2.2.2-827
 - google-chrome latest
 - google-drive latest
 - gyazo 2.1
 - helium latest
+- iconping 1.02
 - isolator 4.9beta
 - iterm2 2.1.1
 - java 1.8.0_77-b03
@@ -324,24 +323,24 @@ cask:
 - keepingyouawake 1.2.1
 - keyboard-cleaner latest
 - licecap 1.25
-- little-snitch 3.6
 - logitech-control-center 
 - macdown latest
 - noizio (!) 1.1
 - nosleep 1.4.0
 - numi latest
+- nylas-n1 0.4.40-85cf726
+- openemu 2.0.2
 - origami 2.2
+- pingmenu latest
 - reaper 5.17
-- rightfont latest
-- rowanj-gitx 0.15.1964
 - screenflow 6.0
 - screenhero latest
 - sketch latest
-- sketch-toolbox latest, 0.5.1
+- sketch-toolbox latest 0.5.1
 - skitch 2.7.8
 - skyfonts 5.5.0.0
 - skype latest
-- slack 1.1.4, 1.1.3
+- slack 1.1.3 1.1.4
 - smoothmouse latest
 - spectacle 0.8.10
 - spotify latest
@@ -350,7 +349,6 @@ cask:
 - transmission 2.84
 - unsplash-wallpaper (!) 1330_1440930902
 - viber latest
-- virtualbox 5.0.2-102096, 5.0.14-105127
+- virtualbox 5.0.2-102096 5.0.14-105127
 - vlc 2.2.1
 - xquartz 2.7.8
-- yujitach-menumeters 1.9
