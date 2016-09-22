@@ -49,7 +49,7 @@ brew 'boost-python'
 # brew 'cabal-install' # dependents: haskell-stack, hledger, pandoc
 # brew 'cabextract' # dependents: winetricks
 # brew 'libtasn1', args: ['universal'] # dependents: gnutls
-# brew 'gmp' # dependents: gnutls, mpfr, nettle, ruby
+# brew 'gmp' # dependents: gnutls, nettle, ruby
 # brew 'nettle' # dependents: dnsmasq, gnutls
 # brew 'gnutls' # dependents: emacs, wine
 # brew 'libtool', args: ['universal'] # dependents: bdw-gc, cairo, czmq, elinks, erlang, fontconfig, fontforge, gd, graphicsmagick, harfbuzz, htop-osx, imagemagick, jq, libepoxy, libevent, libffi, libgphoto2, libogg, libpng, libsodium, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, tmux, zeromq
@@ -72,7 +72,7 @@ brew 'ctags'
 # brew 'libsodium' # dependents: czmq, zeromq
 # brew 'zeromq' # dependents: czmq, ffmpeg, fontforge
 # brew 'czmq' # dependents: fontforge
-# brew 'go' # dependents: deis, direnv, emp, fzf, git, git-lfs, github-release, godep, hub, terraform
+# brew 'go' # dependents: deis, direnv, fzf, git, git-lfs, github-release, godep, hub, terraform
 # brew 'godep' # dependents: deis
 brew 'deis'
 brew 'direnv'
@@ -87,7 +87,6 @@ brew 'elinks'
 # brew 'wxmac' # dependents: erlang
 brew 'erlang'
 brew 'elixir'
-brew 'emp'
 brew 'entr'
 brew 'expat'
 # brew 'faac' # dependents: ffmpeg
@@ -155,7 +154,6 @@ brew 'lynx'
 brew 'mackup'
 brew 'macvim', args: ['with-lua', 'with-override-system-vim', 'with-python3']
 brew 'md5sha1sum'
-brew 'mpfr'
 brew 'mysql'
 brew 'nmap'
 brew 'node'
