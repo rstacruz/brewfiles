@@ -48,19 +48,6 @@ brew 'boost-python'
 # brew 'ghc' # dependents: cabal-install, haskell-stack, hledger, pandoc
 # brew 'cabal-install' # dependents: haskell-stack, hledger, pandoc
 # brew 'cabextract' # dependents: winetricks
-# brew 'libtasn1', args: ['universal'] # dependents: gnutls
-# brew 'gmp' # dependents: gnutls, nettle, ruby
-# brew 'nettle' # dependents: dnsmasq, gnutls
-# brew 'gnutls' # dependents: emacs, wine
-# brew 'libtool', args: ['universal'] # dependents: bdw-gc, cairo, czmq, elinks, erlang, fontconfig, fontforge, gd, graphicsmagick, harfbuzz, htop-osx, imagemagick, jq, libepoxy, libevent, libffi, libgphoto2, libogg, libpng, libsodium, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, tmux, zeromq
-# brew 'jpeg', args: ['universal'] # dependents: fontforge, gd, gdk-pixbuf, graphicsmagick, imagemagick, jasper, libtiff, little-cms2, sane-backends, wine, wxmac
-# brew 'libtiff', args: ['universal'] # dependents: fontforge, gd, gdk-pixbuf, graphicsmagick, imagemagick, little-cms2, sane-backends, wine, wxmac
-# brew 'little-cms2', args: ['universal'] # dependents: graphicsmagick, imagemagick, wine
-# brew 'harfbuzz' # dependents: pango
-# brew 'pango' # dependents: fontforge, gtk+3, imagemagick
-# brew 'imagemagick' # dependents: emacs, gifify
-brew 'emacs'
-brew 'cask'
 # brew 'chruby' # dependents: chruby-fish
 # brew 'pcre2' # dependents: fish
 # brew 'fish', args: ['HEAD'] # dependents: chruby-fish
@@ -84,9 +71,21 @@ brew 'direnv'
 # brew 'dirmngr' # dependents: gnupg2
 brew 'dnsmasq'
 brew 'elinks'
+# brew 'libtool', args: ['universal'] # dependents: bdw-gc, cairo, czmq, elinks, erlang, fontconfig, fontforge, gd, graphicsmagick, harfbuzz, htop-osx, imagemagick, jq, libepoxy, libevent, libffi, libgphoto2, libogg, libpng, libsodium, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, tmux, zeromq
+# brew 'jpeg', args: ['universal'] # dependents: fontforge, gd, gdk-pixbuf, graphicsmagick, imagemagick, jasper, libtiff, little-cms2, sane-backends, wine, wxmac
+# brew 'libtiff', args: ['universal'] # dependents: fontforge, gd, gdk-pixbuf, graphicsmagick, imagemagick, little-cms2, sane-backends, wine, wxmac
 # brew 'wxmac' # dependents: erlang
 brew 'erlang'
 brew 'elixir'
+# brew 'libtasn1', args: ['universal'] # dependents: gnutls
+# brew 'gmp' # dependents: gnutls, nettle, ruby
+# brew 'nettle' # dependents: dnsmasq, gnutls
+# brew 'gnutls' # dependents: emacs, wine
+# brew 'little-cms2', args: ['universal'] # dependents: graphicsmagick, imagemagick, wine
+# brew 'harfbuzz' # dependents: pango
+# brew 'pango' # dependents: fontforge, gtk+3, imagemagick
+# brew 'imagemagick' # dependents: emacs, gifify
+brew 'emacs'
 brew 'entr'
 brew 'expat'
 # brew 'faac' # dependents: ffmpeg
