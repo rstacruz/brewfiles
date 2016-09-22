@@ -10,134 +10,132 @@ tap 'homebrew/x11'
 tap 'neovim/neovim'
 tap 'rstacruz/backup'
 tap 'sscotth/monoid'
-cask 'java'
-cask 'xquartz'
 brew 'android-sdk'
-brew 'pkg-config'
-brew 'libyaml'
-brew 'makedepend'
-brew 'openssl', args: ['universal']
+# brew 'pkg-config' # dependents: ansible, aria2, atk, bdw-gc, cairo, czmq, dnsmasq, emacs, ffmpeg, fontconfig, fontforge, gdk-pixbuf, glib, gnome-icon-theme, gnutls, gobject-introspection, graphicsmagick, gsettings-desktop-schemas, gtk+3, gtksourceview3, harfbuzz, imagemagick, libcaca, libepoxy, libevent, libgphoto2, libspatialite, libusb-compat, libvorbis, links, makedepend, neovim, node, pango, pinentry, pixman, py2cairo, pygobject3, python, python3, ruby, ruby-build, rust, the_silver_searcher, tmux, wget, wine, zeromq
+# brew 'libyaml' # dependents: ansible, ruby
+# brew 'makedepend' # dependents: openssl
+# brew 'openssl', args: ['universal'] # dependents: ansible, elinks, erlang, ffmpeg, git, libevent, libssh2, links, lynx, md5sha1sum, mysql, nmap, node, phantomjs, postgresql, python, python3, qt, ruby, ruby-build, rust, sane-backends, siege, wget, wrk
 brew 'ansible'
-brew 'xz', args: ['universal']
-brew 'libssh2'
+# brew 'xz', args: ['universal'] # dependents: ffmpeg, imagemagick, libtiff, python3, the_silver_searcher, wget
+# brew 'libssh2' # dependents: aria2, rust
 brew 'aria2'
-brew 'gettext'
-brew 'libffi'
-brew 'pcre'
-brew 'glib'
-brew 'libpng', args: ['universal']
-brew 'freetype', args: ['universal']
-brew 'fontconfig', args: ['universal']
-brew 'pixman'
-brew 'cairo'
+# brew 'gettext' # dependents: fontforge, git, glib, gnome-icon-theme, gnu-getopt, gsettings-desktop-schemas, gtksourceview3, libgphoto2, neovim, texi2html, wget, yasm
+# brew 'libffi' # dependents: glib, gobject-introspection, gsettings-desktop-schemas, pygobject3, ruby
+# brew 'pcre' # dependents: git, glib, the_silver_searcher, wget, zsh
+# brew 'glib' # dependents: atk, cairo, gdk-pixbuf, gobject-introspection, gsettings-desktop-schemas, gtk+3, harfbuzz, pango, pygobject3
+# brew 'libpng', args: ['universal'] # dependents: cairo, fontforge, freetype, gd, gdk-pixbuf, graphicsmagick, imagemagick, libicns, wxmac
+# brew 'freetype', args: ['universal'] # dependents: cairo, ffmpeg, fontconfig, gd, graphicsmagick, harfbuzz, imagemagick, wine
+# brew 'fontconfig', args: ['universal'] # dependents: cairo, ffmpeg, fontforge, gd, imagemagick, pango
+# brew 'pixman' # dependents: cairo
+# brew 'cairo' # dependents: fontforge, gobject-introspection, harfbuzz, pango, py2cairo
 brew 'git'
-brew 'gobject-introspection'
-brew 'atk'
-brew 'autoconf'
+# brew 'gobject-introspection' # dependents: atk, gdk-pixbuf, gsettings-desktop-schemas, gtk+3, harfbuzz, pango, pygobject3
+# brew 'atk' # dependents: gtk+3
+# brew 'autoconf' # dependents: automake, bdw-gc, cairo, ctags, czmq, elinks, emacs, erlang, fish, fontconfig, fontforge, gd, harfbuzz, hicolor-icon-theme, htop-osx, jq, json-c, libepoxy, libevent, libffi, libgphoto2, liblwgeom, libogg, libpng, libsass, libsodium, libspatialite, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, ruby, ruby-build, the_silver_searcher, tig, tmux, unfs3, wget, yasm, zeromq, zsh
 brew 'autojump'
-brew 'automake'
+# brew 'automake' # dependents: bdw-gc, cairo, czmq, elinks, emacs, erlang, fontconfig, fontforge, gd, harfbuzz, hicolor-icon-theme, htop-osx, jq, json-c, libepoxy, libevent, libffi, libgphoto2, liblwgeom, libogg, libpng, libsass, libsodium, libspatialite, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, the_silver_searcher, tig, tmux, unfs3, wget, yasm, zeromq
 brew 'aws-elasticbeanstalk'
 brew 'awscli'
 brew 'bdw-gc'
-brew 'icu4c'
-brew 'boost'
-brew 'readline'
-brew 'sqlite'
-brew 'gdbm'
-brew 'sphinx-doc'
+# brew 'icu4c' # dependents: boost, harfbuzz, sqlite, v8
+# brew 'boost' # dependents: boost-python, cgal
+# brew 'readline' # dependents: gnupg2, postgresql, python, python3, ruby, sqlite, tig, v8
+# brew 'sqlite' # dependents: libspatialite, python, python3
+# brew 'gdbm' # dependents: python, python3, ruby, zsh
+# brew 'sphinx-doc' # dependents: cmake, ghc, python, python3
 brew 'python3'
 brew 'boost-python'
-brew 'go'
+# brew 'go' # dependents: boot2docker, deis, direnv, emp, fzf, git, git-lfs, github-release, godep, hub, terraform
 brew 'boot2docker'
-brew 'ghc'
-brew 'cabal-install'
-brew 'cabextract'
-brew 'libtasn1', args: ['universal']
-brew 'gmp'
-brew 'nettle'
-brew 'gnutls'
-brew 'libtool', args: ['universal']
-brew 'jpeg', args: ['universal']
-brew 'libtiff', args: ['universal']
-brew 'little-cms2', args: ['universal']
-brew 'harfbuzz'
-brew 'pango'
-brew 'imagemagick'
+# brew 'ghc' # dependents: cabal-install, haskell-stack, hledger, pandoc
+# brew 'cabal-install' # dependents: haskell-stack, hledger, pandoc
+# brew 'cabextract' # dependents: winetricks
+# brew 'libtasn1', args: ['universal'] # dependents: gnutls
+# brew 'gmp' # dependents: cgal, gnutls, mpfr, nettle, ruby
+# brew 'nettle' # dependents: dnsmasq, gnutls
+# brew 'gnutls' # dependents: emacs, wine
+# brew 'libtool', args: ['universal'] # dependents: bdw-gc, cairo, czmq, elinks, erlang, fontconfig, fontforge, gd, graphicsmagick, harfbuzz, htop-osx, imagemagick, jq, json-c, libepoxy, libevent, libffi, libgphoto2, liblwgeom, libogg, libpng, libsass, libsodium, libspatialite, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, tmux, zeromq
+# brew 'jpeg', args: ['universal'] # dependents: fontforge, gd, gdk-pixbuf, graphicsmagick, imagemagick, jasper, libgeotiff, libtiff, links, little-cms2, sane-backends, wine, wxmac
+# brew 'libtiff', args: ['universal'] # dependents: fontforge, gd, gdk-pixbuf, graphicsmagick, imagemagick, libgeotiff, links, little-cms2, sane-backends, wine, wxmac
+# brew 'little-cms2', args: ['universal'] # dependents: graphicsmagick, imagemagick, wine
+# brew 'harfbuzz' # dependents: pango
+# brew 'pango' # dependents: fontforge, gtk+3, imagemagick
+# brew 'imagemagick' # dependents: emacs, gifify
 brew 'emacs'
 brew 'cask'
-brew 'cmake'
-brew 'mpfr'
+# brew 'cmake' # dependents: cgal, mysql, neovim, rust
+# brew 'mpfr' # dependents: cgal
 brew 'cgal'
 brew 'cheat'
-brew 'chruby'
-brew 'pcre2'
-brew 'fish', args: ['HEAD']
+# brew 'chruby' # dependents: chruby-fish
+# brew 'pcre2' # dependents: fish
+# brew 'fish', args: ['HEAD'] # dependents: chruby-fish
 brew 'chruby-fish', args: ['HEAD']
 brew 'cloc'
-brew 'cscope'
+# brew 'cscope' # dependents: macvim
 brew 'ctags'
-brew 'libsodium'
-brew 'zeromq'
-brew 'czmq'
-brew 'godep'
+# brew 'libsodium' # dependents: czmq, zeromq
+# brew 'zeromq' # dependents: czmq, ffmpeg, fontforge
+# brew 'czmq' # dependents: fontforge
+# brew 'godep' # dependents: deis
 brew 'deis'
 brew 'direnv'
-brew 'libgpg-error'
-brew 'libassuan'
-brew 'libgcrypt'
-brew 'libksba'
-brew 'pth'
-brew 'dirmngr'
+# brew 'libgpg-error' # dependents: dirmngr, gnupg2, gpg-agent, libassuan, libgcrypt, libksba, pinentry
+# brew 'libassuan' # dependents: dirmngr, gnupg2, gpg-agent, pinentry
+# brew 'libgcrypt' # dependents: dirmngr, gnupg2, gpg-agent
+# brew 'libksba' # dependents: dirmngr, gnupg2, gpg-agent
+# brew 'pth' # dependents: dirmngr, gnupg2, gpg-agent
+# brew 'dirmngr' # dependents: gnupg2
 brew 'dnsmasq'
 brew 'elinks'
-brew 'wxmac'
+# brew 'wxmac' # dependents: erlang
 brew 'erlang'
 brew 'elixir'
 brew 'emp'
 brew 'entr'
 brew 'expat'
-brew 'faac'
-brew 'texi2html'
-brew 'python'
-brew 'yasm'
-brew 'x264'
-brew 'lame'
-brew 'xvid'
-brew 'libogg'
-brew 'libvorbis'
-brew 'libvpx'
-brew 'libcaca'
-brew 'ffmpeg'
+# brew 'faac' # dependents: ffmpeg
+# brew 'texi2html' # dependents: ffmpeg, zsh
+# brew 'python' # dependents: gobject-introspection, gsettings-desktop-schemas
+# brew 'yasm' # dependents: ffmpeg, libvpx, x264
+# brew 'x264' # dependents: ffmpeg
+# brew 'lame' # dependents: ffmpeg
+# brew 'xvid' # dependents: ffmpeg
+# brew 'libogg' # dependents: libvorbis
+# brew 'libvorbis' # dependents: ffmpeg
+# brew 'libvpx' # dependents: ffmpeg
+# brew 'libcaca' # dependents: ffmpeg
+# brew 'ffmpeg' # dependents: gifify
 brew 'figlet'
-brew 'giflib'
+# brew 'giflib' # dependents: fontforge
 brew 'fontforge'
 brew 'fpp'
-brew 'freexl'
+# brew 'freexl' # dependents: libspatialite
 brew 'fzf'
-brew 'gd', args: ['universal']
-brew 'gdk-pixbuf'
-brew 'geos'
+# brew 'gd', args: ['universal'] # dependents: libgphoto2
+# brew 'gdk-pixbuf' # dependents: gtk+3
+# brew 'geos' # dependents: liblwgeom, libspatialite
 brew 'gifify'
 brew 'git-cal'
 brew 'git-extras'
 brew 'git-fresh'
 brew 'git-lfs'
 brew 'github-release'
-brew 'libepoxy'
-brew 'hicolor-icon-theme'
-brew 'gsettings-desktop-schemas'
-brew 'jasper', args: ['universal']
-brew 'gtk+3'
+# brew 'libepoxy' # dependents: gtk+3
+# brew 'hicolor-icon-theme' # dependents: gtk+3
+# brew 'gsettings-desktop-schemas' # dependents: gtk+3
+# brew 'jasper', args: ['universal'] # dependents: graphicsmagick, gtk+3, libicns
+# brew 'gtk+3' # dependents: gnome-icon-theme, gtksourceview3
 brew 'gnome-icon-theme'
-brew 'gnu-getopt'
+# brew 'gnu-getopt' # dependents: pass
 brew 'gnu-sed', args: ['with-default-names']
-brew 'libusb', args: ['universal']
-brew 'libusb-compat', args: ['universal']
+# brew 'libusb', args: ['universal'] # dependents: libusb-compat
+# brew 'libusb-compat', args: ['universal'] # dependents: gnupg, gnupg2, libgphoto2, sane-backends
 brew 'gnupg'
-brew 'pinentry'
-brew 'gpg-agent'
+# brew 'pinentry' # dependents: gnupg2, gpg-agent
+# brew 'gpg-agent' # dependents: gnupg2
 brew 'gnupg2'
-brew 'gpp'
+# brew 'gpp' # dependents: liblwgeom
 brew 'graphicsmagick'
 brew 'gtksourceview3'
 brew 'haskell-stack'
@@ -147,40 +145,40 @@ brew 'hledger'
 brew 'htop-osx'
 brew 'httpie'
 brew 'hub'
-brew 'oniguruma'
+# brew 'oniguruma' # dependents: jq
 brew 'jq'
-brew 'json-c'
+# brew 'json-c' # dependents: liblwgeom
 brew 'jsonpp'
-brew 'libevent'
-brew 'lzlib'
-brew 'proj'
+# brew 'libevent' # dependents: tmux
+# brew 'lzlib' # dependents: libgeotiff
+# brew 'proj' # dependents: libgeotiff, liblwgeom, libspatialite
 brew 'libgeotiff'
-brew 'libgphoto2', args: ['universal']
-brew 'libicns', args: ['universal']
-brew 'liblwgeom'
+# brew 'libgphoto2', args: ['universal'] # dependents: wine
+# brew 'libicns', args: ['universal'] # dependents: wine
+# brew 'liblwgeom' # dependents: libspatialite
 brew 'libsass'
-brew 'libxml2'
+# brew 'libxml2' # dependents: gettext, libspatialite, postgresql
 brew 'libspatialite'
 brew 'libvo-aacenc'
 brew 'links'
-brew 'lua'
-brew 'luajit'
+# brew 'lua' # dependents: macvim
+# brew 'luajit' # dependents: macvim
 brew 'lynx'
 brew 'mackup'
 brew 'macvim', args: ['with-lua', 'with-override-system-vim', 'with-python3']
 brew 'md5sha1sum'
-brew 'mysql'
+# brew 'mysql' # dependents: qt
 brew 'nmap'
 brew 'node'
 brew 'nvm'
 brew 'optipng'
-brew 'p7zip'
-brew 'pandoc'
-brew 'tree'
+# brew 'p7zip' # dependents: winetricks
+# brew 'pandoc' # dependents: youtube-dl
+# brew 'tree' # dependents: pass
 brew 'pass'
 brew 'phantomjs'
-brew 'postgresql', service_restart: true
-brew 'py2cairo'
+# brew 'postgresql', service_restart: true # dependents: liblwgeom, qt
+# brew 'py2cairo' # dependents: pygobject3
 brew 'pygobject3'
 brew 'qt'
 brew 'reattach-to-user-namespace'
@@ -188,7 +186,7 @@ brew 'redis'
 brew 'ruby-build'
 brew 'rust'
 brew 's3cmd'
-brew 'sane-backends', args: ['universal']
+# brew 'sane-backends', args: ['universal'] # dependents: wine
 brew 'siege'
 brew 'ssh-copy-id'
 brew 'subliminal'
@@ -199,10 +197,10 @@ brew 'tig'
 brew 'tmux'
 brew 'unfs3'
 brew 'unixodbc'
-brew 'unrar'
+# brew 'unrar' # dependents: winetricks
 brew 'v8'
 brew 'wget'
-brew 'wine'
+# brew 'wine' # dependents: winetricks
 brew 'winetricks'
 brew 'wrk'
 brew 'youtube-dl'
@@ -211,6 +209,8 @@ brew 'homebrew/boneyard/ngrok'
 brew 'homebrew/versions/gmp4'
 brew 'homebrew/versions/phantomjs192'
 brew 'neovim/neovim/neovim', args: ['HEAD']
+cask 'java'
+cask 'xquartz'
 cask 'adobe-creative-cloud'
 cask 'airserver'
 cask 'alfred'
