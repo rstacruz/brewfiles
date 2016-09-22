@@ -11,7 +11,7 @@ tap 'neovim/neovim'
 tap 'rstacruz/backup'
 tap 'sscotth/monoid'
 brew 'android-sdk'
-# brew 'pkg-config' # dependents: ansible, aria2, atk, bdw-gc, cairo, czmq, dnsmasq, emacs, ffmpeg, fontconfig, fontforge, gdk-pixbuf, glib, gnome-icon-theme, gnutls, gobject-introspection, graphicsmagick, gsettings-desktop-schemas, gtk+3, gtksourceview3, harfbuzz, imagemagick, libcaca, libepoxy, libevent, libgphoto2, libspatialite, libusb-compat, libvorbis, links, makedepend, neovim, node, pango, pinentry, pixman, py2cairo, pygobject3, python, python3, ruby, ruby-build, rust, the_silver_searcher, tmux, wget, wine, zeromq
+# brew 'pkg-config' # dependents: ansible, aria2, atk, bdw-gc, cairo, czmq, dnsmasq, emacs, ffmpeg, fontconfig, fontforge, gdk-pixbuf, glib, gnome-icon-theme, gnutls, gobject-introspection, graphicsmagick, gsettings-desktop-schemas, gtk+3, gtksourceview3, harfbuzz, imagemagick, libcaca, libepoxy, libevent, libgphoto2, libusb-compat, libvorbis, links, makedepend, neovim, node, pango, pinentry, pixman, py2cairo, pygobject3, python, python3, ruby, ruby-build, rust, the_silver_searcher, tmux, wget, wine, zeromq
 # brew 'libyaml' # dependents: ansible, ruby
 # brew 'makedepend' # dependents: openssl
 # brew 'openssl', args: ['universal'] # dependents: ansible, elinks, erlang, ffmpeg, git, libevent, libssh2, links, lynx, md5sha1sum, mysql, nmap, node, phantomjs, postgresql, python, python3, ruby, ruby-build, rust, sane-backends, siege, wget
@@ -31,16 +31,16 @@ brew 'aria2'
 brew 'git'
 # brew 'gobject-introspection' # dependents: atk, gdk-pixbuf, gsettings-desktop-schemas, gtk+3, harfbuzz, pango, pygobject3
 # brew 'atk' # dependents: gtk+3
-# brew 'autoconf' # dependents: automake, bdw-gc, cairo, ctags, czmq, elinks, emacs, erlang, fish, fontconfig, fontforge, gd, harfbuzz, hicolor-icon-theme, htop-osx, jq, json-c, libepoxy, libevent, libffi, libgphoto2, liblwgeom, libogg, libpng, libsodium, libspatialite, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, ruby, ruby-build, the_silver_searcher, tig, tmux, wget, yasm, zeromq, zsh
+# brew 'autoconf' # dependents: automake, bdw-gc, cairo, ctags, czmq, elinks, emacs, erlang, fish, fontconfig, fontforge, gd, harfbuzz, hicolor-icon-theme, htop-osx, jq, libepoxy, libevent, libffi, libgphoto2, libogg, libpng, libsodium, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, ruby, ruby-build, the_silver_searcher, tig, tmux, wget, yasm, zeromq, zsh
 brew 'autojump'
-# brew 'automake' # dependents: bdw-gc, cairo, czmq, elinks, emacs, erlang, fontconfig, fontforge, gd, harfbuzz, hicolor-icon-theme, htop-osx, jq, json-c, libepoxy, libevent, libffi, libgphoto2, liblwgeom, libogg, libpng, libsodium, libspatialite, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, the_silver_searcher, tig, tmux, wget, yasm, zeromq
+# brew 'automake' # dependents: bdw-gc, cairo, czmq, elinks, emacs, erlang, fontconfig, fontforge, gd, harfbuzz, hicolor-icon-theme, htop-osx, jq, libepoxy, libevent, libffi, libgphoto2, libogg, libpng, libsodium, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, the_silver_searcher, tig, tmux, wget, yasm, zeromq
 brew 'aws-elasticbeanstalk'
 brew 'awscli'
 brew 'bdw-gc'
 # brew 'icu4c' # dependents: boost, harfbuzz, sqlite, v8
 # brew 'boost' # dependents: boost-python
 # brew 'readline' # dependents: gnupg2, postgresql, python, python3, ruby, sqlite, tig, v8
-# brew 'sqlite' # dependents: libspatialite, python, python3
+# brew 'sqlite' # dependents: python, python3
 # brew 'gdbm' # dependents: python, python3, ruby, zsh
 # brew 'sphinx-doc' # dependents: cmake, ghc, python, python3
 brew 'python3'
@@ -52,7 +52,7 @@ brew 'boost-python'
 # brew 'gmp' # dependents: gnutls, mpfr, nettle, ruby
 # brew 'nettle' # dependents: dnsmasq, gnutls
 # brew 'gnutls' # dependents: emacs, wine
-# brew 'libtool', args: ['universal'] # dependents: bdw-gc, cairo, czmq, elinks, erlang, fontconfig, fontforge, gd, graphicsmagick, harfbuzz, htop-osx, imagemagick, jq, json-c, libepoxy, libevent, libffi, libgphoto2, liblwgeom, libogg, libpng, libsodium, libspatialite, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, tmux, zeromq
+# brew 'libtool', args: ['universal'] # dependents: bdw-gc, cairo, czmq, elinks, erlang, fontconfig, fontforge, gd, graphicsmagick, harfbuzz, htop-osx, imagemagick, jq, libepoxy, libevent, libffi, libgphoto2, libogg, libpng, libsodium, libssh2, libusb, libvorbis, libxml2, neovim, pango, pcre, tmux, zeromq
 # brew 'jpeg', args: ['universal'] # dependents: fontforge, gd, gdk-pixbuf, graphicsmagick, imagemagick, jasper, libgeotiff, libtiff, links, little-cms2, sane-backends, wine, wxmac
 # brew 'libtiff', args: ['universal'] # dependents: fontforge, gd, gdk-pixbuf, graphicsmagick, imagemagick, libgeotiff, links, little-cms2, sane-backends, wine, wxmac
 # brew 'little-cms2', args: ['universal'] # dependents: graphicsmagick, imagemagick, wine
@@ -105,11 +105,9 @@ brew 'expat'
 brew 'figlet'
 # brew 'giflib' # dependents: fontforge
 brew 'fontforge'
-# brew 'freexl' # dependents: libspatialite
 brew 'fzf'
 # brew 'gd', args: ['universal'] # dependents: libgphoto2
 # brew 'gdk-pixbuf' # dependents: gtk+3
-# brew 'geos' # dependents: liblwgeom, libspatialite
 brew 'gifify'
 brew 'git-cal'
 brew 'git-extras'
@@ -130,7 +128,6 @@ brew 'gnupg'
 # brew 'pinentry' # dependents: gnupg2, gpg-agent
 # brew 'gpg-agent' # dependents: gnupg2
 brew 'gnupg2'
-# brew 'gpp' # dependents: liblwgeom
 brew 'graphicsmagick'
 brew 'gtksourceview3'
 brew 'haskell-stack'
@@ -142,18 +139,15 @@ brew 'httpie'
 brew 'hub'
 # brew 'oniguruma' # dependents: jq
 brew 'jq'
-# brew 'json-c' # dependents: liblwgeom
 brew 'jsonpp'
 # brew 'libevent' # dependents: tmux
 # brew 'lzlib' # dependents: libgeotiff
-# brew 'proj' # dependents: libgeotiff, liblwgeom, libspatialite
+# brew 'proj' # dependents: libgeotiff
 brew 'libgeotiff'
 # brew 'libgphoto2', args: ['universal'] # dependents: wine
 # brew 'libicns', args: ['universal'] # dependents: wine
-# brew 'liblwgeom' # dependents: libspatialite
-# brew 'libxml2' # dependents: gettext, libspatialite, postgresql
-brew 'libspatialite'
 brew 'libvo-aacenc'
+# brew 'libxml2' # dependents: gettext, postgresql
 brew 'links'
 # brew 'lua' # dependents: macvim
 # brew 'luajit' # dependents: macvim
@@ -172,7 +166,7 @@ brew 'optipng'
 # brew 'tree' # dependents: pass
 brew 'pass'
 brew 'phantomjs'
-# brew 'postgresql', service_restart: true # dependents: liblwgeom
+brew 'postgresql', service_restart: true
 # brew 'py2cairo' # dependents: pygobject3
 brew 'pygobject3'
 brew 'reattach-to-user-namespace'
