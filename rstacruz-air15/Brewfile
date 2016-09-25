@@ -11,7 +11,7 @@ tap 'neovim/neovim'
 tap 'rstacruz/backup'
 tap 'sscotth/monoid'
 brew 'android-sdk'
-# brew 'pkg-config' # dependents: ansible, aria2, atk, bdw-gc, cairo, czmq, dnsmasq, emacs, ffmpeg, fontconfig, fontforge, gdk-pixbuf, glib, gnome-icon-theme, gnutls, gobject-introspection, graphicsmagick, gsettings-desktop-schemas, gtk+3, gtksourceview3, harfbuzz, imagemagick, libcaca, libepoxy, libevent, libgphoto2, libspatialite, libusb-compat, libvorbis, makedepend, neovim, node, pango, pinentry, pixman, postgis, python3, ruby, ruby-build, rust, the_silver_searcher, tmux, toilet, wget, wine, zeromq
+# brew 'pkg-config' # dependents: ansible, aria2, atk, bdw-gc, cairo, czmq, dnsmasq, emacs, ffmpeg, fontconfig, fontforge, gdk-pixbuf, glib, gnome-icon-theme, gnutls, gobject-introspection, graphicsmagick, gsettings-desktop-schemas, gtk+3, gtksourceview3, harfbuzz, imagemagick, libcaca, libcroco, libepoxy, libevent, libgphoto2, librsvg, libspatialite, libusb-compat, libvorbis, makedepend, neovim, node, pango, pinentry, pixman, postgis, python3, ruby, ruby-build, rust, the_silver_searcher, tmux, toilet, wget, wine, zeromq
 # brew 'libyaml' # dependents: ansible, ruby
 # brew 'makedepend' # dependents: openssl
 # brew 'openssl', args: ['universal'] # dependents: ansible, elinks, erlang, ffmpeg, git, libevent, libssh2, md5sha1sum, mysql, nmap, node, phantomjs, postgresql, python3, ruby, ruby-build, rust, sane-backends, siege, wget
@@ -22,12 +22,12 @@ brew 'aria2'
 # brew 'gettext' # dependents: fontforge, git, glib, gnome-icon-theme, gnu-getopt, gsettings-desktop-schemas, gtksourceview3, libgphoto2, neovim, texi2html, wget, yasm
 # brew 'libffi' # dependents: glib, gobject-introspection, gsettings-desktop-schemas, ruby
 # brew 'pcre' # dependents: git, glib, postgis, the_silver_searcher, wget, zsh
-# brew 'glib' # dependents: atk, cairo, gdk-pixbuf, gobject-introspection, gsettings-desktop-schemas, gtk+3, harfbuzz, pango
+# brew 'glib' # dependents: atk, cairo, gdk-pixbuf, gobject-introspection, gsettings-desktop-schemas, gtk+3, harfbuzz, libcroco, librsvg, pango
 # brew 'libpng', args: ['universal'] # dependents: cairo, fontforge, freetype, gd, gdal, gdk-pixbuf, graphicsmagick, imagemagick, libicns, wxmac
 # brew 'freetype', args: ['universal'] # dependents: cairo, ffmpeg, fontconfig, gd, graphicsmagick, harfbuzz, imagemagick, wine
 # brew 'fontconfig', args: ['universal'] # dependents: cairo, ffmpeg, fontforge, gd, imagemagick, pango
 # brew 'pixman' # dependents: cairo
-# brew 'cairo' # dependents: fontforge, gobject-introspection, harfbuzz, pango
+# brew 'cairo' # dependents: fontforge, gobject-introspection, harfbuzz, librsvg, pango
 brew 'git'
 # brew 'gobject-introspection' # dependents: atk, gdk-pixbuf, gsettings-desktop-schemas, gtk+3, harfbuzz, pango
 # brew 'atk' # dependents: gtk+3
@@ -83,9 +83,17 @@ brew 'elixir'
 # brew 'libtasn1', args: ['universal'] # dependents: gnutls
 # brew 'nettle' # dependents: dnsmasq, gnutls
 # brew 'gnutls' # dependents: emacs, wine
-# brew 'little-cms2', args: ['universal'] # dependents: graphicsmagick, imagemagick, wine
+# brew 'gdk-pixbuf' # dependents: gtk+3, librsvg
+# brew 'libcroco' # dependents: librsvg
 # brew 'harfbuzz' # dependents: pango
-# brew 'pango' # dependents: fontforge, gtk+3, imagemagick
+# brew 'pango' # dependents: fontforge, gtk+3, imagemagick, librsvg
+# brew 'libepoxy' # dependents: gtk+3
+# brew 'hicolor-icon-theme' # dependents: gtk+3
+# brew 'gsettings-desktop-schemas' # dependents: gtk+3
+# brew 'jasper', args: ['universal'] # dependents: gdal, graphicsmagick, gtk+3, libicns
+# brew 'gtk+3' # dependents: gnome-icon-theme, gtksourceview3, librsvg
+# brew 'librsvg' # dependents: emacs, gnome-icon-theme, imagemagick
+# brew 'little-cms2', args: ['universal'] # dependents: graphicsmagick, imagemagick, wine
 # brew 'imagemagick' # dependents: emacs, gifify, postgis
 brew 'emacs'
 brew 'entr'
@@ -118,18 +126,12 @@ brew 'fzf'
 # brew 'postgresql', service_restart: true # dependents: gdal, liblwgeom, postgis
 # brew 'mysql' # dependents: gdal
 # brew 'gdal' # dependents: postgis
-# brew 'gdk-pixbuf' # dependents: gtk+3
 brew 'gifify'
 brew 'git-cal'
 brew 'git-extras'
 brew 'git-fresh'
 brew 'git-lfs'
 brew 'github-release'
-# brew 'libepoxy' # dependents: gtk+3
-# brew 'hicolor-icon-theme' # dependents: gtk+3
-# brew 'gsettings-desktop-schemas' # dependents: gtk+3
-# brew 'jasper', args: ['universal'] # dependents: gdal, graphicsmagick, gtk+3, libicns
-# brew 'gtk+3' # dependents: gnome-icon-theme, gtksourceview3
 brew 'gnome-icon-theme'
 # brew 'gnu-getopt' # dependents: pass
 brew 'gnu-sed', args: ['with-default-names']
@@ -166,6 +168,7 @@ brew 'nvm'
 brew 'optipng'
 # brew 'p7zip' # dependents: winetricks
 # brew 'pandoc' # dependents: youtube-dl
+# brew 'pwgen' # dependents: pass
 # brew 'tree' # dependents: pass
 brew 'pass'
 brew 'phantomjs'

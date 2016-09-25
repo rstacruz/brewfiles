@@ -15,50 +15,47 @@ module Utils
 end
 
 class Brewfile
-  attr_reader :taps
-  attr_reader :brews
-  attr_reader :casks
+  attr_accessor :taps
+  attr_accessor :brews
+  attr_accessor :casks
 
   def initialize
     @taps = {}
     @brews = {}
     @casks = {}
   end
+end
 
-  def as_json
-    { taps: @taps, brews: @brews, casks: @casks }
+class BrewfileReader
+  attr_reader :brewfile
+
+  def self.read(brewfile, source)
+    self.new(brewfile).read(source).brewfile
   end
 
-  def to_s
-    to_s_section(@taps, 'tap') +
-    to_s_section(@brews, 'brew') +
-    to_s_section(@casks, 'cask')
+  def initialize(brewfile)
+    @brewfile = brewfile
   end
 
-  def to_s_section(list, cmd)
-    list.map do |key, value|
-      dependents = value.delete(:dependents)
-      s = "#{cmd} '#{key}'"
-      s << ", #{Utils.hash_inspect(value)}" if value != {}
-      s = "# #{s} # dependents: #{dependents.join(', ')}" if dependents
-      s << "\n"
-      s
-    end.join('')
+  def read(source)
+    instance_eval source
+    self
   end
 
   def tap(tap, options = {})
-    @taps[tap] = options
+    brewfile.taps[tap] = options
   end
 
   def brew(brew, options = {})
-    @brews[brew] = options
+    brewfile.brews[brew] = options
   end
 
   def cask(cask, options = {})
-    @casks[cask] = options
+    brewfile.casks[cask] = options
   end
 end
 
+# Marks dependents in a Brewfile tree
 module BrewfileCleaner
   extend self
 
@@ -71,6 +68,8 @@ module BrewfileCleaner
     dep_tree.each do |pkg, dependents|
       @bf.brews[pkg][:dependents] = dependents
     end
+
+    @bf
   end
 
   def trasitives
@@ -85,7 +84,7 @@ module BrewfileCleaner
         .map { |s| s =~ /^([^.]+).*depends_on "([^"]+)"/ && [$1, $2] }
     end.sort.uniq
 
-    dep_tree = dep_map.reduce({}) do |hash, (dependent, pkg)|
+    dep_map.reduce({}) do |hash, (dependent, pkg)|
       hash[pkg] ||= []
       hash[pkg] << dependent
       hash
@@ -93,13 +92,36 @@ module BrewfileCleaner
   end
 end
 
+module BrewfileRenderer
+  extend self
+
+  def render(brewfile)
+    to_s_section(brewfile.taps, 'tap') +
+    to_s_section(brewfile.brews, 'brew') +
+    to_s_section(brewfile.casks, 'cask')
+  end
+
+  def to_s_section(list, cmd)
+    list.map do |key, value|
+      dependents = value.delete(:dependents)
+      s = "#{cmd} '#{key}'"
+      s << ", #{Utils.hash_inspect(value)}" if value != {}
+      s = "# #{s} # dependents: #{dependents.join(', ')}" if dependents
+      s << "\n"
+      s
+    end.join('')
+  end
+
+end
+
 module BrewfileCleanerCLI
   extend self
   def run
     bf = Brewfile.new
-    bf.instance_eval File.read('Brewfile')
-    BrewfileCleaner.clean(bf)
-    File.write('Brewfile', bf.to_s)
+    bf = BrewfileReader.read(bf, File.read('Brewfile'))
+    bf = BrewfileCleaner.clean(bf)
+    data = BrewfileRenderer.render(bf)
+    File.write('Brewfile', data)
   end
 end
 
