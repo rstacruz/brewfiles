@@ -1,9 +1,8 @@
 #!/usr/bin/env ruby
-# Comments out transitive dependencies
-# Usage:
+# Finds dependents that can be removed
 #
-#     brew bundle dump        # writes Brewfile
-#     ruby ./bundle-clean.rb  # updates Brewfile
+#     ruby ./brew-uninstall.rb ffmpeg
+#     # These packages will be removed: ffmpeg faac lame libvorbis libvpx x264 xvid
 #
 module Utils
   extend self
@@ -26,32 +25,12 @@ class Brewfile
   end
 end
 
-class BrewfileReader
-  attr_reader :brewfile
-
-  def self.read(brewfile, source)
-    self.new(brewfile).read(source).brewfile
-  end
-
-  def initialize(brewfile)
-    @brewfile = brewfile
-  end
-
-  def read(source)
-    instance_eval source
-    self
-  end
-
-  def tap(tap, options = {})
-    brewfile.taps[tap] = options
-  end
-
-  def brew(brew, options = {})
-    brewfile.brews[brew] = options
-  end
-
-  def cask(cask, options = {})
-    brewfile.casks[cask] = options
+module BrewLoader
+  def self.load(brewfile)
+    `brew list -1`.strip.split("\n").each do |pkg|
+      brewfile.brews[pkg] = {}
+    end
+    brewfile
   end
 end
 
@@ -92,37 +71,43 @@ module BrewExplorer
   end
 end
 
-module BrewfileRenderer
-  extend self
+module BrewDepChecker
+  def self.check_dependencies(brewfile, pkgs)
+    brews = brewfile.brews
+    to_uninstall = []
+    brews.each do |pkg, options|
+      dependents = options[:dependents] || []
+      if dependents.length != 0 && (dependents | pkgs) == pkgs
+        to_uninstall << pkg
+      end
+    end
 
-  def render(brewfile)
-    to_s_section(brewfile.taps, 'tap') +
-    to_s_section(brewfile.brews, 'brew') +
-    to_s_section(brewfile.casks, 'cask')
+    to_uninstall.sort!.uniq!
+
+    # Repeat if necessary
+    if to_uninstall.length != 0
+      to_uninstall = BrewDepChecker.check_dependencies(brewfile, to_uninstall)
+    end
+
+    pkgs + to_uninstall
   end
-
-  def to_s_section(list, cmd)
-    list.map do |key, value|
-      dependents = value.delete(:dependents)
-      s = "#{cmd} '#{key}'"
-      s << ", #{Utils.hash_inspect(value)}" if value != {}
-      s = "# #{s} # dependents: #{dependents.join(', ')}" if dependents
-      s << "\n"
-      s
-    end.join('')
-  end
-
 end
 
-module BrewfileCleanerCLI
+module BrewUninstaller
   extend self
   def run
     bf = Brewfile.new
-    bf = BrewfileReader.read(bf, File.read('Brewfile'))
+    bf = BrewLoader.load(bf)
     bf = BrewExplorer.find_deps(bf)
-    data = BrewfileRenderer.render(bf)
-    File.write('Brewfile', data)
+
+    pkgs = ARGV
+
+    # dependents = BrewDepChecker.check_dependencies(bf, pkgs)
+    # puts "These packages depend on #{pkgs.join(' ')}: #{dependents.join(' ')}"
+
+    output = BrewDepChecker.check_dependencies(bf, pkgs)
+    puts "These packages will be removed: #{output.join(' ')}"
   end
 end
 
-BrewfileCleanerCLI.run
+BrewUninstaller.run
