@@ -116,7 +116,7 @@ brew 'figlet'
 brew 'fontforge'
 # brew 'freexl' # dependents: gdal, libspatialite
 brew 'fzf'
-# brew 'gd', args: ['universal'] # dependents: libgphoto2
+# brew 'gd', args: ['universal'] # dependents: graphviz, libgphoto2
 # brew 'geos' # dependents: gdal, liblwgeom, libspatialite, postgis
 # brew 'json-c' # dependents: gdal, liblwgeom, postgis
 # brew 'lzlib' # dependents: libgeotiff
@@ -172,11 +172,12 @@ brew 'optipng'
 # brew 'tree' # dependents: pass
 brew 'pass'
 brew 'phantomjs'
+brew 'pinentry-mac'
 # brew 'sfcgal' # dependents: postgis
 brew 'postgis'
 brew 'reattach-to-user-namespace'
 brew 'redis', restart_service: true
-brew 'ruby'
+# brew 'ruby' # dependents: graphviz
 brew 'ruby-build'
 brew 'rust'
 brew 's3cmd'
