@@ -75,7 +75,7 @@ brew 'faac'
 brew 'ffmpeg'
 brew 'figlet'
 # brew 'libtool', args: ['universal'] # dependents: cairo, erlang, fontconfig, fontforge, gd, gdal, ghc, graphicsmagick, graphviz, harfbuzz, htop-osx, imagemagick, jq, json-c, libcaca, libepoxy, libevent, libffi, libgphoto2, liblwgeom, libogg, libpng, libsodium, libspatialite, libssh2, libtermkey, libusb, libuv, libvorbis, libvterm, libxml2, neovim, pango, pcre, postgis, tmate, tmux, unibilium, zeromq
-# brew 'icu4c' # dependents: boost, harfbuzz, sqlite, v8
+# brew 'icu4c' # dependents: boost, harfbuzz, node, sqlite, v8
 # brew 'harfbuzz' # dependents: pango
 # brew 'pango' # dependents: fontforge, graphviz, gtk+3, imagemagick, librsvg
 brew 'fontforge'
