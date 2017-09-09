@@ -1,7 +1,7 @@
 # Apps I use:
 
-- **[CLI apps](rstacruz-air15/brew.sh)**
-- **[GUI apps](rstacruz-air15/cask.sh)**
+- **[CLI apps](rstacruz-air15-2/brew.sh)**
+- **[GUI apps](rstacruz-air15-2/cask.sh)**
 
 ---
 
