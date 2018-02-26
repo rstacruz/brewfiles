@@ -66,6 +66,7 @@ module BrewExplorer
     @bf = bf
     dep_tree = trasitives
     dep_tree.each do |pkg, dependents|
+      @bf.brews[pkg] ||= {}
       @bf.brews[pkg][:dependents] = dependents
     end
 
