@@ -18,11 +18,13 @@ class Brewfile
   attr_accessor :taps
   attr_accessor :brews
   attr_accessor :casks
+  attr_accessor :mas
 
   def initialize
     @taps = {}
     @brews = {}
     @casks = {}
+    @mas = {}
   end
 end
 
@@ -52,6 +54,10 @@ class BrewfileReader
 
   def cask(cask, options = {})
     brewfile.casks[cask] = options
+  end
+
+  def mas(mas, options = {})
+    brewfile.mas[mas] = options
   end
 end
 
@@ -99,7 +105,8 @@ module BrewfileRenderer
   def render(brewfile)
     to_s_section(brewfile.taps, 'tap') +
     to_s_section(brewfile.brews, 'brew') +
-    to_s_section(brewfile.casks, 'cask')
+    to_s_section(brewfile.casks, 'cask') +
+    to_s_section(brewfile.mas, 'mas')
   end
 
   def to_s_section(list, cmd)
