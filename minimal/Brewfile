@@ -3,24 +3,28 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'd12frosted/emacs-plus'
 
-# core
-brew 'autojump'
-brew 'tmux'
-brew 'ranger'
-brew 'ripgrep'
-brew 'kpcli'
-brew 'htop'
-brew 'fish'
-brew 'tig'
+brew 'autojump' # jumps to folders via 'j keyword'
+brew 'tmux' # terminal screen manager
+brew 'ranger' # finder for cli
+brew 'ripgrep' # find fast via 'rg'
+brew 'kpcli' # keepass cli client
+brew 'htop' # activity monitor
+brew 'fish' # friendly interactive shell
+brew 'tig' # git client
 brew 'd12frosted/emacs-plus/emacs-plus', args: ['devel']
 
-# cask
-cask 'alfred'
-cask 'firefoxdeveloperedition'
-cask 'keeweb'
-cask 'keyboardcleantool'
-cask 'kitty'
+# Cask
+# cask 'alfred'
+cask 'firefoxdeveloperedition' # future firefox
+cask 'keeweb' # keepass client
+cask 'keyboardcleantool' # disables keyboard for cleaning
+cask 'kitty' # terminal emulator
+cask 'spectacle' # move keywords via keys
+cask 'google-backup-and-sync' # sync files with google drive
+cask 'google-chrome'
+cask 'resilio-sync' # sync files over the network
 
-# cask 'google-backup-and-sync'
-# cask 'resilio-sync'
-# cask 'google-chrome'
+# Fonts
+cask 'caskroom/fonts/font-iosevka'
+cask 'caskroom/fonts/font-iosevka-nerd-font'
+cask 'caskroom/fonts/font-roboto'
