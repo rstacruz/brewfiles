@@ -1,0 +1,26 @@
+# Brew starter kit!
+tap 'caskroom/cask'
+tap 'caskroom/fonts'
+tap 'd12frosted/emacs-plus'
+
+# core
+brew 'autojump'
+brew 'tmux'
+brew 'ranger'
+brew 'ripgrep'
+brew 'kpcli'
+brew 'htop'
+brew 'fish'
+brew 'tig'
+brew 'd12frosted/emacs-plus/emacs-plus', args: ['devel']
+
+# cask
+cask 'alfred'
+cask 'firefoxdeveloperedition'
+cask 'keeweb'
+cask 'keyboardcleantool'
+cask 'kitty'
+
+# cask 'google-backup-and-sync'
+# cask 'resilio-sync'
+# cask 'google-chrome'
