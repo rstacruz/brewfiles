@@ -1,28 +1,35 @@
 # Brew starter kit!
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
+tap 'homebrew/services'
 tap 'd12frosted/emacs-plus'
 
 brew 'autojump' # jumps to folders via 'j keyword'
-brew 'tmux' # terminal screen manager
+brew 'd12frosted/emacs-plus/emacs-plus', args: ['devel']
+brew 'fish' # friendly interactive shell
+brew 'git' # something programmers use, I guess
+brew 'git-extras' # convenient git commands
+brew 'htop' # activity monitor
+brew 'kpcli' # keepass cli client
 brew 'ranger' # finder for cli
 brew 'ripgrep' # find fast via 'rg'
-brew 'kpcli' # keepass cli client
-brew 'htop' # activity monitor
-brew 'fish' # friendly interactive shell
+brew 'terminal-notifier' # cli notification sender
 brew 'tig' # git client
-brew 'd12frosted/emacs-plus/emacs-plus', args: ['devel']
+brew 'tmux' # terminal screen manager
 
 # Cask
 # cask 'alfred'
+cask 'app-tamer' # cpu limiter
 cask 'firefoxdeveloperedition' # future firefox
+cask 'google-backup-and-sync' # sync files with google drive
+cask 'google-chrome'
+cask 'karabiner-elements' # config keyboard keys
 cask 'keeweb' # keepass client
 cask 'keyboardcleantool' # disables keyboard for cleaning
 cask 'kitty' # terminal emulator
-cask 'spectacle' # move keywords via keys
-cask 'google-backup-and-sync' # sync files with google drive
-cask 'google-chrome'
 cask 'resilio-sync' # sync files over the network
+cask 'skitch' # image paste tool
+cask 'spectacle' # move keywords via keys
 
 # Fonts
 cask 'caskroom/fonts/font-iosevka'
